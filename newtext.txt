@@ -1,0 +1,6 @@
+trunc
+trunc2
+trunc3
+append
+append
+append
