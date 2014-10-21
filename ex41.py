@@ -16,8 +16,12 @@ PHRASES = {
 	 "class %%% has-a __init__ that takes self and *** parameters.",
 	"class %%%(object):\n\tdef ***(self, @@@)":
 	 "class %%% has-a function named *** that takes self and @@@ paramters.",
-	"*** = %%%()":
-	 "From *** get the *** function, and call it with parameters self, @@@.",
+
+
+	"*** = %%%()": "Set the *** variable equal to the result of the %%% function", #Entry fixedN
+	 #"From *** get the *** function, and call it with parameters self, @@@.", #There is something wrong with this entry
+
+
 	"***.*** = '***'":
 	 "From *** get the *** attribute and set it to '***'."
 }
@@ -33,7 +37,7 @@ if len(sys.argv) == 2 and sys.argv[1] == "english":
 
 #Load up the words from the website
 for word in urlopen(WORD_URL).readlines(): #Takes words from text file in website, and reads them (WORD_URL set in LINE 7)
-	WORDS.append(word.strip()) #For every word at the specified web page append to the WORDS list and strip whitespace
+	WORDS.append(word.strip()) #For every word at the specified web page append to the list WORDS and strip whitespace
 
 
 def convert(snippet, phrase):
