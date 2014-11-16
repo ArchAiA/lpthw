@@ -1,14 +1,10 @@
 $def with (greeting)
 
-<html>
-<head>
-	<title>Greeting Page</title>
-</head>
 
-<body>
 	$if greeting:
 		I just wanted to say <em>$greeting</em>.
 	$else:
 		greeting is undefined...
-</body>
-</html>
+
+	<br />
+	<a href="/hello">Back To Form</a>

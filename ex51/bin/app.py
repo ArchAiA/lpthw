@@ -1,7 +1,7 @@
 import web
 
 urls = (
-	'/', 'index', 
+	'/hello', 'index', 
 	'/foo', 'foo'
 )
 
