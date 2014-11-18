@@ -1,6 +1,6 @@
 
 from nose.tools import *
-from gothonweb.map import Room
+from gothonweb.map import *
 
 
 # This tests the __init__ function of the Room() class.  
