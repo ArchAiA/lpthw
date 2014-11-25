@@ -1,0 +1,14 @@
+$def with (foomessage)
+
+<html>
+<head>
+	<title>FOO Page</title>
+</head>
+
+<body>
+	$if foomessage:
+		I just wanted to say <em>$foomessage</em>.
+	$else:
+		greeting is undefined...
+</body>
+</html>
