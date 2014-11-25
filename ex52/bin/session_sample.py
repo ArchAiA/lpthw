@@ -2,7 +2,6 @@ import web
 
 web.config.debug = False
 
-urls = (
 	"/count", "count",
 	"/reset", "reset"
 )
